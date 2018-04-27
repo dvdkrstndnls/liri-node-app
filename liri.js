@@ -1,13 +1,14 @@
  
+//dotenv
+require('dotenv').config()
+
+//9. Add the code required to import the `keys.js` file and store it in a variable. NOT DONE UNLESS THE BELOW IS SOLUTION
+
+
 //twitter request
 var Twitter = require('twitter');
  
-var client = new Twitter({
-  consumer_key: '',
-  consumer_secret: '',
-  access_token_key: '',
-  access_token_secret: ''
-});
+var client = new Twitter(keys.twitter);
  
 var params = {screen_name: 'nodejs'};
 client.get('statuses/user_timeline', params, function(error, tweets, response) {
@@ -20,10 +21,7 @@ client.get('statuses/user_timeline', params, function(error, tweets, response) {
   //spotify request
   var Spotify = require('node-spotify-api');
  
-var spotify = new Spotify({
-  id: dcd051a80d524ec4b901b67bde59ef3f,
-  secret: 37887078e1894dc4b82eb2d01ad0b3d9,
-});
+  var spotify = new Spotify(keys.spotify);
  
 spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, data) {
   if (err) {
@@ -43,9 +41,8 @@ request('http://www.omdbapi.com/?apikey=[yourkey]&', function (error, response, 
 });
 
 
-//dotenv
-require('dotenv').config()
 
+//dotenv
 const db = require('db')
 db.connect({
   host: process.env.DB_HOST,
