@@ -1,5 +1,5 @@
 {
-  "name": "liri-node-app",
+  "name": "liri",
   "version": "1.0.0",
   "description": "Language Interpretation and Recognition Interface",
   "main": "liri.js",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/dvdkrstndnls/liri-node-app/issues"
   },
-  "homepage": "https://github.com/dvdkrstndnls/liri-node-app#readme"
+  "homepage": "https://github.com/dvdkrstndnls/liri-node-app#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "node-spotify-api": "^1.0.7",
+    "twitter": "^1.7.1"
+  }
 }

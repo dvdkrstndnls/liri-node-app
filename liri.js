@@ -2,9 +2,18 @@
 //dotenv
 require('dotenv').config()
 
-//9. Add the code required to import the `keys.js` file and store it in a variable. NOT DONE UNLESS THE BELOW IS SOLUTION
+//9. Add the code required to import the `keys.js` file and store it in a variable. 
+var stuffINeed = require("keys.js") // or is it ./keys.js
+console.log(stuffINeed);
+
+var spotify = new Spotify(keys.spotify);
+var client = new Twitter(keys.twitter);
 
 
+
+
+
+//do I need any of the below?
 //twitter request
 var Twitter = require('twitter');
  

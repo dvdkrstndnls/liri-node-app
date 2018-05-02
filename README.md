@@ -7,13 +7,14 @@ In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, whi
 
 ### Before You Begin
 
-1. LIRI will display your latest tweets. As we do not want to display your personal account, or its keys, please make an alias account and add a few tweets to it!
+1. LIRI will display your latest tweets. As we do not want to display your personal account, or its keys, please make an alias account and add a few tweets to it! DONE
+https://twitter.com/messymountains
 
-2. Make a new GitHub repository called liri-node-app and clone it to your computer.
+2. Make a new GitHub repository called liri-node-app and clone it to your computer. DONE
 
 3. To retrieve the data that will power this app, you'll need to send requests to the Twitter, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
 
-   * [Twitter](https://www.npmjs.com/package/twitter)
+   * [Twitter](https://www.npmjs.com/packlirage/twitter)
    
    * [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
    
@@ -25,7 +26,7 @@ In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, whi
      
 ### Instructions
 
-1. Navigate to the root of your project and run `npm init -y` &mdash; this will initialize a `package.json` file for your project. The `package.json` file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a `package.json` file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
+1. Navigate to the root of your project and run `npm init -y` --- this will initialize a `package.json` file for your project. The `package.json` file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a `package.json` file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
 
 2. Make a .gitignore file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
 
@@ -55,7 +56,7 @@ exports.spotify = {
 };
 ```
 
-4. Next, create a file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them:
+4. Next, create a file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them: 
 
 ```js
 # Spotify API keys
@@ -104,7 +105,7 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 require("dotenv").config();
 ```
 
-9. Add the code required to import the `keys.js` file and store it in a variable.
+9. Add the code required to import the `keys.js` file and store it in a variable. DONE?
   
 * You should then be able to access your keys information like so
 
