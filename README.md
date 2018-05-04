@@ -142,7 +142,7 @@ require("dotenv").config();
      
      * The album that the song is from
 
-   * If no song is provided then your program will default to "The Sign" by Ace of Base.
+   * If no song is provided then your program will default to "The Sign" by Ace of Base. DONE
    
    * You will utilize the [node-spotify-api](https://www.npmjs.com/package/node-spotify-api) package in order to retrieve song information from the Spotify API.
    
