@@ -3,16 +3,15 @@ Language Interpretation and Recognition Interface
 
 ### Overview
 
-In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
+LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 
 ### Before You Begin
 
-1. LIRI will display your latest tweets. As we do not want to display your personal account, or its keys, please make an alias account and add a few tweets to it! DONE
-https://twitter.com/messymountains
+1. LIRI will display your latest tweets. 
 
-2. Make a new GitHub repository called liri-node-app and clone it to your computer. DONE
+2. Make a new GitHub repository called liri-node-app and clone it to your computer. 
 
-3. To retrieve the data that will power this app, you'll need to send requests to the Twitter, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
+3. To retrieve the data that will power this app, you'll need to send requests to the Twitter, Spotify and OMDB APIs. You'll find these Node packages.
 
    * [Twitter](https://www.npmjs.com/packlirage/twitter)
    
@@ -75,7 +74,7 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 
 * This file will be used by the `dotenv` package to set what are known as environment variables to the global `process.env` object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to github &mdash; keeping our API key information private.
 
-* If someone wanted to clone your app from github and run it themselves, they would need to supply their own `.env` file for it to work.
+* Clone this app from github and run it  yourself - supply your own `.env` file for it to work.
 
 5. Get your Twitter API keys by following these steps:
 
@@ -91,21 +90,21 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
      
      * Copy the access token key and secret displayed at the bottom of the next screen. Paste them into your .env file, replacing the placeholders for `your-twitter-access-token-key` and `your-twitter-access-token-secret`.
 
-6. Make a file called `random.txt`.
+6. I made a file called `random.txt`.
 
-   * Inside of `random.txt` put the following in with no extra characters or white space:
+   * Inside of `random.txt` I put the following in with no extra characters or white space:
      
      * spotify-this-song,"I Want it That Way"
 
-7. Make a JavaScript file named `liri.js`.
+7. I made a JavaScript file named `liri.js`.
 
-8. At the top of the `liri.js` file, add code to read and set any environment variables with the dotenv package:
+8. At the top of the `liri.js` file, I have added code to read and set any environment variables with the dotenv package:
 
 ```js
 require("dotenv").config();
 ```
 
-9. Add the code required to import the `keys.js` file and store it in a variable. DONE?
+9. I have added the code required to import the `keys.js` file and store it in a variable. 
   
 * You should then be able to access your keys information like so
 
@@ -114,7 +113,7 @@ require("dotenv").config();
   var client = new Twitter(keys.twitter);
   ```
 
-10. Make it so liri.js can take in one of the following commands:
+10. I have made it so liri.js can take in one of the following commands:
 
     * `my-tweets`
 
@@ -186,42 +185,3 @@ require("dotenv").config();
      * It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
      
      * Feel free to change the text in that document to test out the feature for other commands.
-
-### BONUS
-
-* In addition to logging the data to your terminal/bash window, output the data to a .txt file called `log.txt`.
-
-* Make sure you append each command you run to the `log.txt` file. 
-
-* Do not overwrite your file each time you run a command.
-
-- - -
-
-### Minimum Requirements
-
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Adding a README.md as well as adding this homework to your portfolio are required as well and more information can be found below.
-
-- - -
-
-### Create a README.md
-
-Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
-
-* [About READMEs](https://help.github.com/articles/about-readmes/)
-
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-- - -
-
-### Add To Your Portfolio
-
-After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
-
-- - -
-
-### One More Thing
-
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-**Good Luck!**
-
