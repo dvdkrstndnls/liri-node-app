@@ -23,6 +23,9 @@ console.log(keys);
 
 var client = new Twitter(keys.twitter);
 
+// Function for Twitter function
+var myTweets = function() {
+
 // Twitter API parameters
 var params = {screen_name: 'messymountains',
               count: 20
@@ -39,11 +42,13 @@ client.get('statuses/user_timeline', params, function(error, tweets, response) {
     
   }
 });
+}
 
 
 
 
-
+// Function for Spotify function
+var spotifyThisSong = function() {
 //spotify request
 var spotify = new Spotify(keys.spotify);
 var spotifyQuery = 'the sign ace of base';
@@ -59,11 +64,13 @@ console.log("Song:         " + data.tracks.items[0].name);
 console.log("Preview Link: " + data.tracks.items[0].preview_url);
 console.log("Album:        " + data.tracks.items[0].album.name);
 });
+}
 
 
 
 
-
+// Functions for OMDB
+var movieThis = function() {
 //OMDB
 var movieQuery;
 if (movieQuery === undefined) {
@@ -90,7 +97,7 @@ request('http://www.omdbapi.com/?apikey=trilogy&?t=' + movieQuery), function (er
   }
 
 };
-
+}
 
 
 // App functionality due to user input
@@ -132,4 +139,5 @@ if(command === "my-tweets") {
 } else if(command === undefined) { // Where no command is given
 	console.log("Please enter a command to run this LIRI Bot.")
 } else { // use case where command is given but not recognized
-	console.log("Hmm, I don't recognize that command. Would you mind trying again?")
+  console.log("Hmm, I don't recognize that command. Would you mind trying again?")
+}
